@@ -1,0 +1,12 @@
+<% @actors.each do |actor|  %>
+	<h3><%= actor.name %></h3>
+	<ul>
+
+		<li><%= link_to "Foto", actor.image_url %></li>
+		<li><%= actor.name %></li>
+		<li><%= actor.bio %></li>
+		<li><%= actor.birth_date %></li>
+		<li><%= actor.birth_place %></li>
+	</ul>
+	<hr>
+<% end %>
